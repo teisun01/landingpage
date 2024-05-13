@@ -1,0 +1,578 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt@-10..0&display=swap');
+
+
+/* Estilos para el contenedor principal */
+.container {
+  width: 100%; /* Ancho completo */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  max-width: 1200px; /* Ancho máximo para mantener un diseño legible */
+}
+
+
+/* Ajustes para el contenido principal */
+.contenido-principal {
+  padding: 20px; /* Espacio alrededor del contenido */
+}
+
+/* Ajustes para el carrusel */
+.carrusel,
+.nuevo-carrusel,
+.carrusel03 {
+  width: calc(100% - 40px); /* Ancho completo menos el espacio de relleno */
+  margin: auto; /* Centra el carrusel horizontalmente */
+}
+
+/* Ajustes para los grupos de imágenes en el carrusel */
+.grupo-imagenes {
+  width: 100%; /* Ancho completo del grupo de imágenes */
+}
+
+/* Ajustes para los indicadores */
+.indicadores,
+.nuevo-indicadores,
+.carrusel03-indicadores {
+  width: 100%; /* Ancho completo de los indicadores */
+}
+
+body {
+  background-color: #121518;
+  font-size: 16px;
+
+  margin: 0; /* Agrega esto para eliminar el margen predeterminado del body */
+}
+
+
+
+h1 {
+  font-family: 'Archivo'; /* Agrega la fuente Montserrat como primera opción */
+  font-weight: 900; /* Establece el peso de la fuente */
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+  margin: 32px;
+  font-size: 48px !important;
+}
+
+h2{
+  
+  font-family: 'Inter';
+  color: #ffffff;
+  text-align: left;
+  font-size: 20px !important;
+}
+
+
+h3{
+  border-bottom: 2px solid #17D0F9;
+  width: 156px;
+  margin: 32px;
+  margin-bottom: 20px; /* Espacio adicional debajo del subrayado */
+  font-family: 'Archivo';
+  font-weight: 900; /* Establece el peso de la fuente */
+  font-size: 20px !important;
+  color: #ffffff;
+  text-align: left;
+}
+.ultimo-h3 {
+  border-bottom: none;
+  width: auto;
+}
+ol, ul{
+  font-family: 'inter';
+  text-align: left;
+  color: #ffffff;
+  font-size: 10px !important;
+  margin: 32px;
+  
+}
+
+p {
+  font-family: 'inter';
+  text-align: left;
+  color: #ffffff;
+  font-size: 12px !important;
+  margin: 32px;
+}
+
+li {
+  font-family: 'Archivo';
+  font-weight: 900; /* Establece el peso de la fuente */
+  text-align: left;
+  color: #ffffff;
+  font-size: 9px !important;
+  margin: 32px;
+}
+
+a {
+  font-family: 'Archivo'; /* Agrega la fuente Montserrat como primera opción */
+  font-weight: 900; /* Establece el peso de la fuente */
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+  margin: 32px;
+}
+
+.imagen-con-texto {
+  display: inline-block; /* Mostrar cada imagen en línea */
+  max-width: 40%; /* Ajusta el ancho máximo de las imágenes según sea necesario */
+}
+
+.texto-imagen {
+  font-family: 'Archivo'; /* Agrega la fuente Montserrat como primera opción */
+  font-weight: 900; /* Establece el peso de la fuente */
+  position: absolute;
+  bottom: 10px; /* Ajusta la posición vertical del texto */
+  left: 10px; /* Ajusta la posición horizontal del texto */
+  color: #ffffff; /* Color del texto */
+  font-size: 24px; /* Tamaño de fuente del texto */
+  padding: 5px 10px; /* Espacio de relleno alrededor del texto */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.todo{
+  background-color: #ffffff;
+  width: 96%; /* Utiliza un ancho relativo */
+  margin: auto auto;
+  border: 2px solid #27384C;
+  padding: 20px;
+  box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+
+}
+
+header {
+  margin-top: 0; /* Ajusta el margen superior del encabezado a cero para eliminar el espacio */
+}
+
+
+.barra-navegacion {
+  background-color: #333; /* Color de fondo de la barra de navegación */
+  height: 60px; /* Altura de la barra de navegación */
+  width: 100%; /* Ancho completo de la ventana del navegador */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+
+.barra-navegacion .logo {
+  position: relative; /* Establece posición relativa para poder mover el logo */
+  top: 0; /* Ajusta la posición vertical del logo según sea necesario */
+  display: block; /* Hace que la imagen sea un bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin-top: 0px; /* Centra la imagen horizontalmente */
+  max-width: 120px; /* Establece el ancho máximo de la imagen */
+  max-height: 100%; /* Establece la altura máxima de la imagen */
+  padding: 10px; /* Añade relleno alrededor de la imagen */
+}
+
+
+/* Estilos para el footer */
+footer {
+  text-align: center; /* Alinea el texto al centro */
+  padding: 40px 0; /* Agrega un espacio de relleno arriba y abajo */
+  background-color: #333; /* Color de fondo del footer */
+}
+
+.logo-footer {
+  float: left; /* Alinea el logo a la izquierda */
+  max-width: 100px; /* Ancho máximo del logo */
+  margin-right: 20px; /* Ajusta el margen derecho del logo */
+  margin-left: 32px; /* Ajusta el margen izquierdo del logo */
+}
+
+.imagenes-derecha-footer {
+
+  float: right; /* Alinea las imágenes a la derecha */
+
+}
+
+
+.imagenes-derecha-footer img {
+  width: 30px; /* Ancho de las imágenes */
+  margin: 0 10px; /* Espacio entre las imágenes */
+
+}
+
+.boton-enterate {
+  font-family: 'Archivo', sans-serif; /* Agrega la fuente Montserrat como primera opción y una fuente genérica como respaldo */
+  font-weight: 900; /* Establece el peso de la fuente */
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #17D0F9; /* Borde celeste */
+  color: #ffffff; /* Color del texto */
+  text-decoration: none;
+  position: relative; /* Añade posición relativa */
+  margin: 32px;
+}
+
+.boton-enterate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #17D0F9; /* Color de fondo con opacidad */
+  opacity: 0.1; /* Reducción de la opacidad */
+  z-index: -1; /* Envía el pseudo-elemento detrás del contenido del botón */
+  transition: opacity 0.3s; /* Agrega una transición de opacidad */
+}
+
+.boton-enterate:hover::before {
+  opacity: 1; /* Restaura la opacidad al pasar el mouse */
+}
+
+/* Estilos para el contenido dentro del botón */
+.boton-enterate .contenido-boton {
+  display: flex; /* Utiliza flexbox para alinear verticalmente */
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilos para los elementos dentro del botón */
+.boton-enterate .contenido-boton > * {
+  margin: 5px 0; /* Ajusta los márgenes superior e inferior */
+}
+
+
+
+.banner {
+  margin-top: 0; /* Elimina el margen superior */
+  background-image: url('../img/fondoweb.png'); /* Ruta de la imagen de fondo */
+  height: 415px; /* Altura del banner */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  width: 100vw; /* Ancho completo de la ventana del navegador */
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  margin-top: 0; /* Elimina el margen superior */
+  background-image: url('../img/fondoweb.png'); /* Ruta de la imagen de fondo */
+  height: 415px; /* Altura del banner */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  width: 100vw; /* Ancho completo de la ventana del navegador */
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el contenido dentro del banner */
+.contenido {
+  text-align: left; /* Alinea el texto a la izquierda */
+  color: #ffffff; /* Color del texto */
+  padding: 0 20px; /* Agrega un espacio alrededor del texto */
+  max-width: 80%; /* Establece un ancho máximo para el texto */
+}
+
+h1.enterate {
+  font-family: 'Archivo'; /* Mantenemos la fuente para todo el h1 */
+  font-weight: 900;
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+  font-size: 48px !important;
+  
+}
+
+h1.enterate .enterate-texto {
+  color: rgba(0, 0, 0, 0.2); /* Relleno transparente */; /* Color del texto */
+  -webkit-text-stroke: 2px #17D0F9; /* Borde/stroke azul */
+  -moz-text-stroke: 2px #17D0F9; /* Borde/stroke azul */
+}
+
+h2.enterate {
+  font-family: 'inter'; 
+  color: #ffffff;
+  text-align: left;
+  position: relative;
+  font-size: 12px !important;
+  margin-left:-622px;
+}
+
+
+
+.caja {
+  background-color: #121518; /* Color de fondo */
+  padding: 20px; /* Espacio interior del contenedor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra en los bordes */
+  margin-top: 20px; /* Espacio superior */
+  margin: 32px;
+  min-height: 280px; /* Ajusta el valor según el contenido esperado */
+}
+
+.beneficios {
+  text-align: center;
+  margin-top: 20px;
+  position: relative; /* Añade posición relativa para poder superponer el texto */
+}
+
+.beneficios-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+
+  margin-left: -80px; /* Agrega un margen izquierdo negativo */
+}
+
+.beneficio {
+  width: 32%;
+  margin-top: 20px;
+  text-align: center; /* Alinea el texto al centro */
+
+  position: relative;
+}
+
+.beneficio img {
+  max-width: 40%; /* Establece un ancho máximo del 100% del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+
+
+.beneficio p {
+  position: absolute;
+  bottom: -64px; /* Ajusta la posición vertical del texto */
+  left: 40px; /* Ajusta la posición horizontal del texto */
+  width: calc(100% - 20px); /* Establece el ancho del texto */
+  color: #ffffff; /* Color del texto */
+  font-family: 'Archivo';
+  font-weight: 900;
+  text-align: left;
+  font-size: 14px !important;
+}
+
+.contenido-interno {
+  
+  color: #ffffff; /* Color del texto */
+}
+
+
+.carrusel {
+  display: flex;
+  flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+  overflow-x: auto; /* Permite desplazarse horizontalmente si los elementos no caben */
+  scroll-snap-type: x mandatory; /* Hace que el desplazamiento sea más suave */
+
+  overflow: hidden; /* Oculta las imágenes que exceden el ancho del contenedor */
+  width: calc(100% - 64px); /* Ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.grupo-imagenes {
+  flex: 0 0 auto; /* Hace que los grupos de imágenes tengan el mismo ancho */
+  width: 100%; /* Ancho máximo del grupo de imágenes */
+  scroll-snap-align: start; /* Alinea los grupos de imágenes al inicio del contenedor */
+  justify-content: space-between; /* Espaciado uniforme entre las imágenes */
+}
+
+.grupo-imagenes img {
+  max-width: 72%;
+  height: auto;
+  margin-right: 100%; /* Agrega un margen derecho entre las imágenes */
+
+}
+
+
+.indicadores {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.indicador {
+  width: 20px;
+  height: 3px;
+  background-color: #333333; /* Color de la línea blanca */
+  margin: 0 10px; /* Espacio entre los indicadores */
+}
+
+/* Estilo para el indicador activo */
+.indicador.activo {
+  background-color: #ffffff; /* Color de la línea blanca oscuro */
+}
+.carrusel03{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;}
+
+.nuevo-carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.nuevo-carrusel {
+  overflow: hidden; /* Oculta las imágenes que exceden el ancho del contenedor */
+  width: 90%; /* Ancho del carrusel */
+  margin-top: 20px; /* Ajusta el espacio superior */
+  margin: 0 32px; /* Centra el carrusel horizontalmente */
+}
+.nuevo-carrusel .grupo-imagenes img {
+  max-width: 100%; /* Establece el ancho máximo del 100% del contenedor */
+  height: auto; /* Ajusta automáticamente la altura */
+}
+
+.nuevo-carrusel .grupo-imagenes:first-child {
+  display: flex;
+}
+
+.nuevo-indicadores {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nuevo-indicadores .indicador {
+  width: 20px;
+  height: 3px;
+  background-color: #333333;
+  margin: 0 10px;
+}
+
+/* Estilo para el indicador activo */
+.nuevo-indicadores .indicador.activo {
+  background-color: #ffffff;
+}
+
+/* Estilos para el nuevo carrusel */
+.carrusel03 {
+  overflow: hidden; /* Oculta las imágenes que exceden el ancho del contenedor */
+  width: 80%; /* Ancho del carrusel */
+   margin-top: 20px; /* Ajusta el espacio superior */
+
+}
+
+.carrusel03 .grupo-imagenes {
+  display: none; /* Oculta todos los grupos de imágenes por defecto */
+}
+
+.carrusel03 .grupo-imagenes:first-child {
+  display: flex; /* Muestra el primer grupo de imágenes */
+}
+
+.carrusel03 .grupo-imagenes img {
+  max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
+  height: auto; /* Ajusta automáticamente la altura */
+  margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+/* Estilos para los indicadores del nuevo carrusel */
+.carrusel03-indicadores {
+  display: flex; /* Muestra los indicadores en línea */
+  justify-content: center; /* Centra los indicadores horizontalmente */
+  margin-top: 10px; /* Espacio superior entre el carrusel y los indicadores */
+}
+
+.carrusel03-indicadores .indicador {
+  width: 20px; /* Ancho de los indicadores (barra) */
+  height: 3px; /* Altura de los indicadores (barra) */
+  background-color: #ccc; /* Color de fondo de los indicadores */
+  margin: 0 5px; /* Espacio entre los indicadores */
+  cursor: pointer; /* Cambia el cursor al pasar sobre los indicadores */
+}
+
+/* Estilo para el indicador activo */
+.carrusel03-indicadores .indicador.activo {
+  background-color: #555; /* Color de fondo del indicador activo */
+}
+
+.checkboxes {
+  margin-left: 32px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 900;
+  color: #ffffff
+}
+
+
+/* Estilo para ocultar el checkbox original */
+.checkboxes input[type="checkbox"] {
+  display: none; /* Oculta el checkbox original */
+}
+
+/* Estilo para crear un checkbox personalizado */
+.checkboxes input[type="checkbox"] + label {
+  position: relative; /* Establece la posición relativa para el label */
+  padding-left: 35px; /* Agrega espacio a la izquierda para el nuevo checkbox */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el label */
+}
+
+/* Estilo para el nuevo checkbox personalizado */
+.checkboxes input[type="checkbox"] + label::before {
+  content: ""; /* No añade ningún contenido antes del label */
+  position: absolute; /* Establece la posición absoluta */
+  left: 0; /* Coloca el nuevo checkbox a la izquierda del label */
+  top: 0; /* Alinea el nuevo checkbox con la parte superior del label */
+  width: 25px; /* Establece el ancho del nuevo checkbox */
+  height: 25px; /* Establece la altura del nuevo checkbox */
+  background-color: #ffffff; /* Establece el color de fondo blanco */
+  
+  border: 2px solid #ffffff; /* Establece el borde del nuevo checkbox */
+  border-radius: 5px; /* Añade bordes redondeados al nuevo checkbox */
+}
+
+/* Estilo para la tilde del nuevo checkbox cuando está seleccionado */
+.checkboxes input[type="checkbox"]:checked + label::after {
+  content: "\2713"; /* Unicode para la tilde */
+  position: absolute; /* Establece la posición absoluta */
+  left: 6px; /* Ajusta la posición horizontal de la tilde */
+  top: 2px; /* Ajusta la posición vertical de la tilde */
+  font-size: 20px; /* Ajusta el tamaño de la tilde */
+  color: #17D0F9; /* Cambia el color de la tilde a celeste */
+}
+
+/* Estilo para las etiquetas de los checkbox */
+.checkboxes label {
+  margin-right: 20px;
+  font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+  color: #ffffff; /* Color del texto */
+}
+
+
+p.archivo-900 {
+  font-family: 'Archivo'; /* Utiliza la fuente Archivo */
+  font-weight: 900; /* Establece el peso de la fuente en 900 */
+  font-size: 16px !important; /* Cambia el tamaño de la fuente según sea necesario */
+}
+
+/* Estilos para el botón deshabilitado */
+.boton-enterate.deshabilitado {
+  pointer-events: none; /* Deshabilita los eventos de clic */
+  opacity: 0.5; /* Reduce la opacidad */
+  cursor: not-allowed; /* Cambia el cursor */
+}
+
+#nombreInput,
+#correoInput {
+  font-family: 'Archivo';
+  font-weight: 900;
+  color: #888888;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+  margin: 10px 32px;
+  font-size: 16px;
+  border-radius: 0;
+  width: 80%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+#nombreInput.active,
+#correoInput.active {
+  opacity: 1;
+  height: auto;
+  color: #000000;
+}
